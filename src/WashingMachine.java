@@ -116,6 +116,52 @@ public class WashingMachine {
         }
     }
     public boolean chooseOption(int optionType) {
+        this.optionType = optionType;
 
+        if(this.optionType > 0 && this.optionType < 6) {
+            switch (this.optionType) {
+                case 1:
+                    System.out.println("Soak is selected.");
+                    break;
+                case 2:
+                    System.out.println("Rinse is selected.");
+                    break;
+                case 3:
+                    System.out.println("Soak & rinse is selected.");
+                    break;
+                case 4:
+                    System.out.println("Rinse & spin is selected.");
+                    break;
+                case 5:
+                    System.out.println("Drain & spin is selected.");
+                    break;
+                default:
+                    System.out.println("No option type is selected.");
+            }
+            return true;
+        } else {
+            return false;
+        }
+    }
+    public void addDelay(int time) {
+        this.time += time;
+    }
+
+    public boolean save(boolean washType, int spinType, int optionType) {
+        this.washType = washType;
+        this.spinType = spinType;
+        this.optionType = optionType;
+        if(this.spinType != 0 || this.optionType != 0) {
+            System.out.println("Wash Type: " + washType);
+            System.out.println("Spin Type: " + spinType);
+            System.out.println("Option Type: " + optionType);
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    public void lock() {
+        System.out.println("You can't change the program option, wash option, spin option anymore!");
     }
 }
