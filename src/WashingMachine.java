@@ -15,7 +15,7 @@ public class WashingMachine {
     private int soilLevel;
     private int waterLevel;
     private boolean washType;
-    private boolean spinType;
+    private int spinType;
     private int optionType;
 
     // no-arg constructor
@@ -74,5 +74,48 @@ public class WashingMachine {
         } else {
             return false;
         }
+    }
+
+    public boolean chooseWash(boolean washType) {
+        this.washType = washType;
+
+        if(washType) {
+            System.out.println("Quick Wash.");
+        } else {
+            System.out.println("Colour Wash.");
+        }
+
+        return washType;
+    }
+    public boolean chooseSpin(int spinType) {
+        this.spinType = spinType;
+
+        if(this.spinType > 0 && this.spinType < 6) {
+            switch (this.spinType) {
+                case 1:
+                    System.out.println("The highest speed is selected.");
+                    break;
+                case 2:
+                    System.out.println("The average speed is selected.");
+                    break;
+                case 3:
+                    System.out.println("The low speed is selected.");
+                    break;
+                case 4:
+                    System.out.println("No spin.");
+                    break;
+                case 5:
+                    System.out.println("Rinse & hold.");
+                    break;
+                default:
+                    System.out.println("No spin type is selected.");
+            }
+            return true;
+        } else {
+            return false;
+        }
+    }
+    public boolean chooseOption(int optionType) {
+
     }
 }
