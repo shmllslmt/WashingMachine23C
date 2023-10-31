@@ -151,7 +151,7 @@ public class WashingMachine {
         this.washType = washType;
         this.spinType = spinType;
         this.optionType = optionType;
-        if(this.spinType != 0 || this.optionType != 0) {
+        if((this.spinType > 0 && this.spinType < 6) || (this.optionType > 0 && this.optionType < 6)) {
             System.out.println("Wash Type: " + washType);
             System.out.println("Spin Type: " + spinType);
             System.out.println("Option Type: " + optionType);
