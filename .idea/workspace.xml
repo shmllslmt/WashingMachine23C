@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7584ec4a-5103-4d0e-a5a5-16dbba3c55fe" name="Changes" comment="All basic method done">
+    <list default="true" id="7584ec4a-5103-4d0e-a5a5-16dbba3c55fe" name="Changes" comment="Update save()">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/WashingMachine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WashingMachine.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -64,13 +66,21 @@
       <option name="project" value="LOCAL" />
       <updated>1698722130736</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Update save()">
+      <created>1698722199977</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1698722199977</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="ChooseProgram()" />
     <MESSAGE value="ChooseSpin()" />
     <MESSAGE value="All basic method done" />
-    <option name="LAST_COMMIT_MESSAGE" value="All basic method done" />
+    <MESSAGE value="Update save()" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update save()" />
   </component>
 </project>

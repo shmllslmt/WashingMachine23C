@@ -20,6 +20,15 @@ public class WashingMachine {
 
     // no-arg constructor
     WashingMachine() {
+        brand = "Samsung";
+        modelno = "WM-201";
+        capacity = 5;
+        time = 45;
+        power = 50;
+        height = 880;
+        width = 530;
+        depth = 530;
+
         System.out.println("A washing machine object is created.");
     }
     public void turnOn(){
@@ -163,5 +172,18 @@ public class WashingMachine {
 
     public void lock() {
         System.out.println("You can't change the program option, wash option, spin option anymore!");
+    }
+
+    @Override
+    public String toString() {
+        return "WashingMachine {" +
+                "brand='" + brand + '\'' +
+                ", modelno='" + modelno + '\'' +
+                ", capacity=" + capacity +
+                ", time=" + time +
+                ", power=" + power +
+                ", height=" + height +
+                ", width=" + width +
+                ", depth=" + depth + "}";
     }
 }
